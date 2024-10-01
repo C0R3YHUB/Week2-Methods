@@ -6,11 +6,11 @@ void CreateMenu()
     {
         // Construct the menu
         Console.Clear();
-        Console.WriteLine("Main Menu");
+        Console.WriteLine("Main Menu\n");
         Console.WriteLine("1. Say Hello");
         Console.WriteLine("2. Add Numbers");
-        Console.WriteLine("4. Calculate Area");
-        Console.WriteLine("3. Exit");
+        Console.WriteLine("3. Calculate Area");
+        Console.WriteLine("4. Exit");
         Console.Write("Choose an option: ");
 
         // Accept the users choice
@@ -25,9 +25,9 @@ void CreateMenu()
                 AddNumbers();
                 break;
             case "3":
+                Area();
                 break;
             case "4":
-                Area();
                 break;
             default:
                 Console.WriteLine("Invalid choice. Please try again.");
